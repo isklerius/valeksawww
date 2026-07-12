@@ -1,0 +1,148 @@
+a:10:{s:10:"content_id";s:3:"174";s:12:"content_type";s:8:"content2";s:5:"title";s:9:"Titulinis";s:8:"menutext";s:9:"Titulinis";s:7:"content";s:19:"{*TxForm form="1"*}";s:11:"template_id";s:2:"23";s:9:"hierarchy";s:1:"1";s:8:"template";s:2568:"{cms_include tpl="header"}
+		<div class="content">
+				{cms_module module="Titulinis" kategorija="foto" kalba=$kalba}
+				<div class="blocks">
+						{content  label="Nuoroda 1" block_group="Blokeliai" block="link1" collapse="false" assign = "link1" oneline=true}
+						{content  label="Blokelis 1" block_group="Blokeliai" block="block1" collapse="false" assign = "block1"}
+						{content  label="Nuoroda 2" block_group="Blokeliai" block="link2" collapse="false" assign = "link2" oneline=true}
+						{content  label="Blokelis 2" block_group="Blokeliai" block="block2" collapse="false" assign = "block2"}
+						{content  label="Nuoroda 3" block_group="Blokeliai" block="link3" collapse="false" assign = "link3" oneline=true}
+						{content  label="Blokelis 3" block_group="Blokeliai" block="block3" collapse="false" assign = "block3"}
+						{content  label="Nuoroda 4" block_group="Blokeliai" block="link4" collapse="false" assign = "link4" oneline=true}
+						{content  label="Blokelis 4" block_group="Blokeliai" block="block4" collapse="false" assign = "block4"}
+						{content  label="Tekstas po blokeliais" block_group="Turinys" block="pofoto" collapse="false" assign = "pofoto"}
+					{if $block1}
+						{if $link1}
+							<a class="block" href="{$link1}">
+								{$block1}
+							</a>
+						{else}
+						<div class="block">
+							{$block1}
+						</div>
+						{/if}
+						
+					{/if}
+					{if $block2}
+						{if $link2}
+							<a class="block" href="{$link2}">
+								{$block2}
+							</a>
+						{else}
+						<div class="block">
+							{$block2}
+						</div>
+						{/if}
+					{/if}
+					{if $block3}
+						{if $link3}
+							<a class="block" href="{$link3}">
+								{$block3}
+							</a>
+						{else}
+						<div class="block">
+							{$block3}
+						</div>
+						{/if}
+					{/if}
+					{if $block4}
+						{if $link4}
+							<a class="block last" href="{$link4}">
+								{$block4}
+							</a>
+						{else}
+						<div class="block last">
+							{$block4}
+						</div>
+						{/if}
+					{/if}
+					<div class="clear"></div>
+				</div>
+				<div class="about">
+					{$pofoto}
+					<div class="clear"></div>
+				</div>
+				{*}
+				<div class="info">
+					<h2>{#naujienos#}</h2>
+						{cms_module module="news" number="2" summarytemplate="titlepage" detailpage=$smarty.config.detnews category=informacija_kreditoriams_$kalba}
+						<a href="{cms_selflink href=$smarty.config.detnews}" class="placiau">{#daugiau#}</a>
+				</div>{*}
+					<div class="clear"></div>
+			</div>
+{cms_include tpl="footer"}";s:8:"encoding";s:5:"utf-8";s:18:"serialized_content";s:21574:"O:8:"Content2":62:{s:11:"_stylesheet";s:31:"../stylesheet.php?templateid=23";s:14:"_contentBlocks";a:9:{s:5:"link1";a:29:{s:5:"label";s:9:"Nuoroda 1";s:11:"block_group";s:14:"main_blokeliai";s:5:"block";s:5:"link1";s:8:"collapse";b:0;s:7:"oneline";b:1;s:4:"name";s:5:"link1";s:2:"id";s:5:"link1";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;}s:6:"block1";a:29:{s:5:"label";s:10:"Blokelis 1";s:11:"block_group";s:14:"main_blokeliai";s:5:"block";s:6:"block1";s:8:"collapse";b:0;s:4:"name";s:6:"block1";s:2:"id";s:6:"block1";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;s:7:"oneline";b:0;}s:5:"link2";a:29:{s:5:"label";s:9:"Nuoroda 2";s:11:"block_group";s:14:"main_blokeliai";s:5:"block";s:5:"link2";s:8:"collapse";b:0;s:7:"oneline";b:1;s:4:"name";s:5:"link2";s:2:"id";s:5:"link2";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;}s:6:"block2";a:29:{s:5:"label";s:10:"Blokelis 2";s:11:"block_group";s:14:"main_blokeliai";s:5:"block";s:6:"block2";s:8:"collapse";b:0;s:4:"name";s:6:"block2";s:2:"id";s:6:"block2";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;s:7:"oneline";b:0;}s:5:"link3";a:29:{s:5:"label";s:9:"Nuoroda 3";s:11:"block_group";s:14:"main_blokeliai";s:5:"block";s:5:"link3";s:8:"collapse";b:0;s:7:"oneline";b:1;s:4:"name";s:5:"link3";s:2:"id";s:5:"link3";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;}s:6:"block3";a:29:{s:5:"label";s:10:"Blokelis 3";s:11:"block_group";s:14:"main_blokeliai";s:5:"block";s:6:"block3";s:8:"collapse";b:0;s:4:"name";s:6:"block3";s:2:"id";s:6:"block3";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;s:7:"oneline";b:0;}s:5:"link4";a:29:{s:5:"label";s:9:"Nuoroda 4";s:11:"block_group";s:14:"main_blokeliai";s:5:"block";s:5:"link4";s:8:"collapse";b:0;s:7:"oneline";b:1;s:4:"name";s:5:"link4";s:2:"id";s:5:"link4";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;}s:6:"block4";a:29:{s:5:"label";s:10:"Blokelis 4";s:11:"block_group";s:14:"main_blokeliai";s:5:"block";s:6:"block4";s:8:"collapse";b:0;s:4:"name";s:6:"block4";s:2:"id";s:6:"block4";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;s:7:"oneline";b:0;}s:6:"pofoto";a:29:{s:5:"label";s:21:"Tekstas po blokeliais";s:11:"block_group";s:12:"main_turinys";s:5:"block";s:6:"pofoto";s:8:"collapse";b:0;s:4:"name";s:6:"pofoto";s:2:"id";s:6:"pofoto";s:13:"editor_groups";s:0:"";s:12:"editor_users";s:0:"";s:8:"multiple";b:0;s:9:"new_block";b:0;s:4:"type";s:4:"text";s:10:"block_type";s:4:"text";s:6:"smarty";b:0;s:16:"translate_labels";b:0;s:16:"translate_values";b:0;s:8:"required";b:0;s:7:"default";s:0:"";s:5:"style";s:0:"";s:4:"size";s:0:"";s:8:"page_tab";s:4:"main";s:9:"block_tab";s:0:"";s:10:"allow_none";b:1;s:11:"description";s:0:"";s:11:"no_collapse";b:0;s:10:"feu_access";s:0:"";s:10:"feu_action";b:0;s:9:"maxlength";s:0:"";s:10:"usewysiwyg";b:1;s:7:"oneline";b:0;}}s:20:"_contentBlocksLoaded";b:1;s:7:"_tabIds";a:3:{i:0;s:4:"main";i:1;s:7:"options";i:2;s:15:"AdvancedContent";}s:9:"_pageTabs";a:3:{s:4:"main";a:5:{s:6:"tab_id";s:4:"main";s:8:"tab_name";s:11:"Pagrindinis";s:10:"block_tabs";a:0:{}s:12:"block_groups";a:2:{s:14:"main_blokeliai";s:14:"main_blokeliai";s:12:"main_turinys";s:12:"main_turinys";}s:14:"content_blocks";a:9:{s:5:"link1";s:5:"link1";s:6:"block1";s:6:"block1";s:5:"link2";s:5:"link2";s:6:"block2";s:6:"block2";s:5:"link3";s:5:"link3";s:6:"block3";s:6:"block3";s:5:"link4";s:5:"link4";s:6:"block4";s:6:"block4";s:6:"pofoto";s:6:"pofoto";}}s:7:"options";a:5:{s:6:"tab_id";s:7:"options";s:8:"tab_name";s:12:"Pasirinkimai";s:10:"block_tabs";a:0:{}s:12:"block_groups";a:0:{}s:14:"content_blocks";a:0:{}}s:15:"AdvancedContent";a:5:{s:6:"tab_id";s:15:"AdvancedContent";s:8:"tab_name";s:16:"Advanced Options";s:10:"block_tabs";a:0:{}s:12:"block_groups";a:0:{}s:14:"content_blocks";a:0:{}}}s:10:"_blockTabs";a:0:{}s:12:"_blockGroups";a:2:{s:14:"main_blokeliai";a:3:{s:8:"group_id";s:14:"main_blokeliai";s:10:"group_name";s:9:"Blokeliai";s:14:"content_blocks";a:8:{s:5:"link1";s:5:"link1";s:6:"block1";s:6:"block1";s:5:"link2";s:5:"link2";s:6:"block2";s:6:"block2";s:5:"link3";s:5:"link3";s:6:"block3";s:6:"block3";s:5:"link4";s:5:"link4";s:6:"block4";s:6:"block4";}}s:12:"main_turinys";a:3:{s:8:"group_id";s:12:"main_turinys";s:10:"group_name";s:7:"Turinys";s:14:"content_blocks";a:1:{s:6:"pofoto";s:6:"pofoto";}}}s:11:"_userGroups";N;s:11:"_dateBlocks";a:0:{}s:18:"_colorPickerBlocks";a:0:{}s:13:"_sliderBlocks";N;s:12:"_multiInputs";a:0:{}s:8:"_isAdmin";N;s:10:"_feuAction";b:0;s:10:"_feuAccess";i:-1;s:10:"_feuGroups";b:0;s:9:"_allUsers";N;s:10:"_allGroups";N;s:13:"_inheritables";N;s:3:"mle";b:0;s:4:"lang";N;s:9:"blockLang";N;s:16:"defaultBlockLang";N;s:3:"mId";s:3:"174";s:5:"mName";s:9:"Titulinis";s:5:"mType";s:8:"content2";s:6:"mOwner";s:1:"1";s:11:"mProperties";O:17:"ContentProperties":4:{s:14:"mPropertyNames";a:52:{i:0;s:6:"target";i:1;s:5:"image";i:2;s:9:"thumbnail";i:3;s:6:"extra1";i:4;s:6:"extra2";i:5;s:6:"extra3";i:6;s:10:"searchable";i:7;s:8:"pagedata";i:8;s:15:"disable_wysiwyg";i:9;s:3:"pav";i:10;s:3:"txt";i:11;s:6:"desine";i:12;s:6:"Antras";i:13;s:9:"marsrutai";i:14;s:17:"veiklos_yptaybes1";i:15;s:6:"Pirmas";i:16;s:7:"ktyptys";i:17;s:17:"veiklos_akcentai1";i:18;s:17:"veiklos_yptaybes2";i:19;s:17:"veiklos_yptaybes3";i:20;s:17:"veiklos_akcentai2";i:21;s:10:"pranasumas";i:22;s:7:"Tracias";i:23;s:7:"turinys";i:24;s:10:"content_en";i:25;s:5:"sonas";i:26;s:10:"feu_action";i:27;s:5:"kaire";i:28;s:6:"block3";i:29;s:5:"link4";i:30;s:5:"link2";i:31;s:5:"link3";i:32;s:6:"block2";i:33;s:15:"use_expire_date";i:34;s:10:"start_date";i:35;s:8:"end_date";i:36;s:10:"feu_access";i:37;s:13:"redirect_page";i:38;s:23:"inherit_redirect_params";i:39;s:15:"redirect_params";i:40;s:15:"evaluate_smarty";i:41;s:14:"hide_menu_item";i:42;s:7:"block_1";i:43;s:7:"block_2";i:44;s:7:"block_3";i:45;s:7:"block_4";i:46;s:7:"block_5";i:47;s:7:"block_6";i:48;s:6:"pofoto";i:49;s:5:"link1";i:50;s:6:"block4";i:51;s:6:"block1";}s:14:"mPropertyTypes";a:52:{s:6:"target";s:6:"string";s:5:"image";s:6:"string";s:9:"thumbnail";s:6:"string";s:6:"extra1";s:6:"string";s:6:"extra2";s:6:"string";s:6:"extra3";s:6:"string";s:10:"searchable";s:6:"string";s:8:"pagedata";s:6:"string";s:15:"disable_wysiwyg";s:6:"string";s:15:"use_expire_date";s:3:"int";s:10:"start_date";s:3:"int";s:8:"end_date";s:3:"int";s:10:"feu_access";s:6:"string";s:13:"redirect_page";s:3:"int";s:23:"inherit_redirect_params";s:3:"int";s:15:"redirect_params";s:6:"string";s:15:"evaluate_smarty";s:3:"int";s:10:"feu_action";s:3:"int";s:14:"hide_menu_item";s:3:"int";s:3:"pav";s:6:"string";s:3:"txt";s:6:"string";s:6:"desine";s:6:"string";s:6:"Antras";s:6:"string";s:9:"marsrutai";s:6:"string";s:17:"veiklos_yptaybes1";s:6:"string";s:6:"Pirmas";s:6:"string";s:7:"ktyptys";s:6:"string";s:17:"veiklos_akcentai1";s:6:"string";s:17:"veiklos_yptaybes2";s:6:"string";s:17:"veiklos_yptaybes3";s:6:"string";s:17:"veiklos_akcentai2";s:6:"string";s:10:"pranasumas";s:6:"string";s:7:"Tracias";s:6:"string";s:7:"turinys";s:6:"string";s:10:"content_en";s:6:"string";s:5:"sonas";s:6:"string";s:5:"kaire";s:6:"string";s:6:"block3";s:6:"string";s:5:"link4";s:6:"string";s:5:"link2";s:6:"string";s:5:"link3";s:6:"string";s:6:"block2";s:6:"string";s:7:"block_1";s:6:"string";s:7:"block_2";s:6:"string";s:7:"block_3";s:6:"string";s:7:"block_4";s:6:"string";s:7:"block_5";s:6:"string";s:7:"block_6";s:6:"string";s:6:"pofoto";s:6:"string";s:5:"link1";s:6:"string";s:6:"block4";s:6:"string";s:6:"block1";s:6:"string";}s:15:"mPropertyValues";a:52:{s:6:"target";s:0:"";s:5:"image";s:0:"";s:9:"thumbnail";s:2:"-1";s:6:"extra1";s:0:"";s:6:"extra2";s:0:"";s:6:"extra3";s:0:"";s:10:"searchable";s:1:"1";s:8:"pagedata";s:0:"";s:15:"disable_wysiwyg";s:1:"0";s:15:"use_expire_date";s:1:"0";s:10:"start_date";s:0:"";s:8:"end_date";s:0:"";s:10:"feu_access";s:0:"";s:13:"redirect_page";s:0:"";s:23:"inherit_redirect_params";s:0:"";s:15:"redirect_params";s:0:"";s:15:"evaluate_smarty";s:0:"";s:10:"feu_action";i:1;s:14:"hide_menu_item";i:0;s:3:"pav";s:0:"";s:3:"txt";s:0:"";s:6:"desine";s:0:"";s:6:"Antras";s:304:"<h1>Kokybė ir aplinkosauga</h1>
+<img src="images/img2.jpg" alt="" />
+<div class="cont">
+<p>Fusce feugiat malesuada odib iravida atcursus necctus a lore stique orci ac sem. Duis ultricies pharet gnaccums. an malesuada orci.</p>
+</div>
+<div class="link"><a href="javascrit:void(0)">plačiau</a></div>";s:9:"marsrutai";s:322:"<ul class="list1">
+<li><a href="prestigious-business-address">Prestigious business address</a></li>
+<li><a href="#">Single person office</a></li>
+<li><a href="#">Large executive office</a></li>
+<li><a href="#">Team space</a></li>
+<li><a href="#">Clustered suites</a></li>
+<li><a href="#">Guest office</a></li>
+</ul>";s:17:"veiklos_yptaybes1";s:216:"<h4>Jūsų veiklos ypatybės</h4>
+<div class="txt2">Customized and cost-effective solution with prestigious corporate address, integrated communications. <a href="#"><img src="images/marker2.gif" alt="" /></a></div>";s:6:"Pirmas";s:289:"<h1>APIE MUS</h1>
+<img src="images/img1.jpg" alt="" />
+<div class="cont">
+<p>Fusce feugiat malesuada odib iravida atcursus necctus a lore stique orci ac sem. Duis ultricies pharet gnaccums. an malesuada orci.</p>
+</div>
+<div class="link"><a href="javascrit:void(0)">plačiau</a></div>";s:7:"ktyptys";s:295:"<ul class="list1">
+<li><a href="#">Prestigious business address</a></li>
+<li><a href="#">Single person office</a></li>
+<li><a href="#">Large executive office</a></li>
+<li><a href="#">Team space</a></li>
+<li><a href="#">Clustered suites</a></li>
+<li><a href="#">Guest office</a></li>
+</ul>";s:17:"veiklos_akcentai1";s:696:"<!-- title-box1 begin -->
+<div class="title-box1">
+<div class="left">
+<div class="right">
+<h3>Trumpas veiklos aprašymas su  akcentais</h3>
+</div>
+</div>
+</div>
+<!-- title-box1 end -->
+<div class="inner1">
+<p class="p2"><img src="images/1page-img1.jpg" alt="" /></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum ornare congue. Pellentesque non quam sed dolor convallis tempor lacinia at velit. Maecenas luctus velit vitae sem rhoncus eget fringilla mi sodales. Duis tristique gravida ligula. Quisque nec elit ac massa tristique rutrum. Integer id.</p>
+<div class="wrapper"><a class="link1" href="#"><em><strong>Learn More</strong></em></a></div>
+</div>";s:17:"veiklos_yptaybes2";s:216:"<h4>Jūsų veiklos ypatybės</h4>
+<div class="txt2">Customized and cost-effective solution with prestigious corporate address, integrated communications. <a href="#"><img src="images/marker2.gif" alt="" /></a></div>";s:17:"veiklos_yptaybes3";s:216:"<h4>Jūsų veiklos ypatybės</h4>
+<div class="txt2">Customized and cost-effective solution with prestigious corporate address, integrated communications. <a href="#"><img src="images/marker2.gif" alt="" /></a></div>";s:17:"veiklos_akcentai2";s:696:"<!-- title-box1 begin -->
+<div class="title-box1">
+<div class="left">
+<div class="right">
+<h3>Trumpas veiklos aprašymas su  akcentais</h3>
+</div>
+</div>
+</div>
+<!-- title-box1 end -->
+<div class="inner1">
+<p class="p2"><img src="images/1page-img1.jpg" alt="" /></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum ornare congue. Pellentesque non quam sed dolor convallis tempor lacinia at velit. Maecenas luctus velit vitae sem rhoncus eget fringilla mi sodales. Duis tristique gravida ligula. Quisque nec elit ac massa tristique rutrum. Integer id.</p>
+<div class="wrapper"><a class="link1" href="#"><em><strong>Learn More</strong></em></a></div>
+</div>";s:10:"pranasumas";s:37:"<h1>Jūsų</h1>
+<h2>PRANAŠUMAS</h2>";s:7:"Tracias";s:304:"<h1>Įgyvendinti  projektai</h1>
+<img src="images/img3.jpg" alt="" />
+<div class="cont">
+<p>Fusce feugiat malesuada odib iravida atcursus necctus a lore stique orci ac sem. Duis ultricies pharet gnaccums. an malesuada orci.</p>
+</div>
+<div class="link"><a href="javascrit:void(0)">plačiau</a></div>";s:7:"turinys";s:17:"{TxForm form="1"}";s:10:"content_en";s:19:"{*TxForm form="1"*}";s:5:"sonas";s:0:"";s:5:"kaire";s:213:"<h2>Verslo vertinimo skaiciuokle</h2>
+<p>Lorem ipsum dolor sit amet.onsec tetuer adipiscing elit. Praesent vestibulum lestie la hendrerit mauris. Phasellus porta. Fusce sus cipit varius mi. Cum sociis natoque</p>";s:6:"block3";s:70:"<img src="images/bl2.png" alt="" />
+<h2>Administruojamos įmonės</h2>";s:5:"link4";s:15:"/naujienos.html";s:5:"link2";s:17:"/darbuotojai.html";s:5:"link3";s:29:"/administruojamos-imones.html";s:6:"block2";s:60:"<img src="images/bl.png" alt="" />
+<h2>Administratoriai</h2>";s:7:"block_1";s:238:"<h2>KET testai</h2>
+<img src="images/block.gif" alt="" /><br /> Basolore sit avertas kertase avertasermas doloertasea aserto yer masenda se miakerta elero feder.Basolore sit avertas kertase<br /> <a href="javascript:void(0)">Plačiau</a>";s:7:"block_2";s:235:"<h2>Akcijos</h2>
+<img src="images/block.gif" alt="" /><br /> Basolore sit avertas kertase avertasermas doloertasea aserto yer masenda se miakerta elero feder.Basolore sit avertas kertase<br /> <a href="javascript:void(0)">Plačiau</a>";s:7:"block_3";s:237:"<h2>Naujienos</h2>
+<img src="images/block.gif" alt="" /><br /> Basolore sit avertas kertase avertasermas doloertasea aserto yer masenda se miakerta elero feder.Basolore sit avertas kertase<br /> <a href="javascript:void(0)">Plačiau</a>";s:7:"block_4";s:237:"<h2>Naujienos</h2>
+<img src="images/block.gif" alt="" /><br /> Basolore sit avertas kertase avertasermas doloertasea aserto yer masenda se miakerta elero feder.Basolore sit avertas kertase<br /> <a href="javascript:void(0)">Plačiau</a>";s:7:"block_5";s:237:"<h2>Naujienos</h2>
+<img src="images/block.gif" alt="" /><br /> Basolore sit avertas kertase avertasermas doloertasea aserto yer masenda se miakerta elero feder.Basolore sit avertas kertase<br /> <a href="javascript:void(0)">Plačiau</a>";s:7:"block_6";s:237:"<h2>Naujienos</h2>
+<img src="images/block.gif" alt="" /><br /> Basolore sit avertas kertase avertasermas doloertasea aserto yer masenda se miakerta elero feder.Basolore sit avertas kertase<br /> <a href="javascript:void(0)">Plačiau</a>";s:6:"pofoto";s:780:"<h2>Mes žinome kaip!</h2>
+<p>UAB „Valeksa“ įsteigta 1996 metais.<br />Nepertraukiamai teikdami bankroto administravimo paslaugas ir padėdami rasti verslo sprendimus savo klientams, per 17 metų darbo praktiką, mes įgijome neįkainojamos patirties. Mes augome kartu su Lietuvos rinka, buvome ne tik stebėtojai, bet ir aktyvūs rinkos dalyviai.<br />Per 17 metų surinkome tvirtą, patyrusių darbuotojų komandą. Iš patirties žinome, kad bankrotas ne retai būna naujo, stipraus verslo pradžia. Visada atsižvelgiame į visų suinteresuotų šio reiškinio pusių interesus. Mes ne tik administruojame bankroto procedūrą, bet proceso metu ieškome bei siūlome optimaliausius verslo sprendimus esamai situacijai.   <br /><br /></p>
+<a href="apie-mus">Plačiau</a>";s:5:"link1";s:36:"/bankrotas-ir-restrukturizacija.html";s:6:"block4";s:110:"<img src="uploads/images/4.png" alt="" width="84" height="84" /><br />
+<h2>Parduodamas turtas / Naujienos</h2>";s:6:"block1";s:129:"<div><img src="uploads/images/1.png" alt="" width="84" height="84" /></div>
+<h2>Bankrotas ir  restruktūrizavimas</h2>
+<p> </p>";}s:21:"mAllowedPropertyNames";N;}s:17:"mPropertiesLoaded";b:1;s:9:"mParentId";s:2:"-1";s:12:"mOldParentId";s:2:"-1";s:11:"mTemplateId";s:2:"23";s:10:"mItemOrder";s:1:"1";s:13:"mOldItemOrder";s:1:"1";s:9:"mMetadata";s:75:"<meta name="description" content="" />
+
+<meta name="keywords" content="" />";s:15:"mTitleAttribute";s:0:"";s:10:"mAccessKey";s:0:"";s:9:"mTabIndex";s:0:"";s:10:"mHierarchy";s:5:"00001";s:12:"mIdHierarchy";s:3:"174";s:14:"mHierarchyPath";s:2:"lt";s:9:"mMenuText";s:9:"Titulinis";s:7:"mActive";b:1;s:6:"mAlias";s:2:"lt";s:9:"mOldAlias";s:2:"lt";s:9:"mCachable";s:1:"1";s:10:" * mSecure";s:1:"0";s:7:" * mURL";s:0:"";s:8:"mPreview";b:1;s:11:"mShowInMenu";s:1:"1";s:15:"mDefaultContent";b:1;s:7:"mMarkup";s:4:"html";s:15:"mLastModifiedBy";s:1:"5";s:13:"mCreationDate";s:19:"2011-01-18 08:50:45";s:13:"mModifiedDate";s:19:"2014-02-20 10:36:59";s:18:"mAdditionalEditors";a:0:{}s:13:"mReadyForEdit";b:1;s:11:"_attributes";a:35:{i:0;a:3:{i:0;s:6:"target";i:1;i:10;i:2;i:0;}i:1;a:3:{i:0;s:5:"title";i:1;i:1;i:2;i:1;}i:2;a:3:{i:0;s:8:"menutext";i:1;i:2;i:2;i:1;}i:3;a:3:{i:0;s:8:"page_url";i:1;i:3;i:2;i:0;}i:4;a:3:{i:0;s:6:"parent";i:1;i:4;i:2;i:1;}i:5;a:3:{i:0;s:6:"active";i:1;i:5;i:2;i:0;}i:6;a:3:{i:0;s:10:"showinmenu";i:1;i:5;i:2;i:0;}i:7;a:3:{i:0;s:6:"secure";i:1;i:6;i:2;i:0;}i:8;a:3:{i:0;s:8:"cachable";i:1;i:7;i:2;i:0;}i:9;a:3:{i:0;s:5:"alias";i:1;i:10;i:2;i:0;}i:10;a:3:{i:0;s:14:"titleattribute";i:1;i:55;i:2;i:0;}i:11;a:3:{i:0;s:9:"accesskey";i:1;i:56;i:2;i:0;}i:12;a:3:{i:0;s:8:"tabindex";i:1;i:57;i:2;i:0;}i:13;a:3:{i:0;s:5:"owner";i:1;i:90;i:2;i:0;}i:14;a:3:{i:0;s:17:"additionaleditors";i:1;i:91;i:2;i:0;}i:15;a:3:{i:0;s:5:"image";i:1;i:50;i:2;i:0;}i:16;a:3:{i:0;s:9:"thumbnail";i:1;i:50;i:2;i:0;}i:17;a:3:{i:0;s:6:"extra1";i:1;i:80;i:2;i:0;}i:18;a:3:{i:0;s:6:"extra2";i:1;i:81;i:2;i:0;}i:19;a:3:{i:0;s:6:"extra3";i:1;i:82;i:2;i:0;}i:20;a:3:{i:0;s:8:"template";i:1;i:4;i:2;i:0;}i:21;a:3:{i:0;s:12:"pagemetadata";i:1;i:20;i:2;i:0;}i:22;a:3:{i:0;s:10:"searchable";i:1;i:8;i:2;i:0;}i:23;a:3:{i:0;s:8:"pagedata";i:1;i:25;i:2;i:0;}i:24;a:3:{i:0;s:15:"disable_wysiwyg";i:1;i:60;i:2;i:0;}i:25;a:3:{i:0;s:15:"use_expire_date";i:1;i:99;i:2;i:0;}i:26;a:3:{i:0;s:10:"start_date";i:1;i:100;i:2;i:0;}i:27;a:3:{i:0;s:8:"end_date";i:1;i:101;i:2;i:0;}i:28;a:3:{i:0;s:10:"feu_access";i:1;i:102;i:2;i:0;}i:29;a:3:{i:0;s:13:"redirect_page";i:1;i:103;i:2;i:0;}i:30;a:3:{i:0;s:23:"inherit_redirect_params";i:1;i:104;i:2;i:0;}i:31;a:3:{i:0;s:15:"redirect_params";i:1;i:105;i:2;i:0;}i:32;a:3:{i:0;s:15:"evaluate_smarty";i:1;i:106;i:2;i:0;}i:33;a:3:{i:0;s:10:"feu_action";i:1;i:107;i:2;i:0;}i:34;a:3:{i:0;s:14:"hide_menu_item";i:1;i:108;i:2;i:0;}}s:14:"_prop_defaults";N;s:9:"_add_mode";N;s:6:"_error";N;s:11:"mChildCount";i:0;}";}

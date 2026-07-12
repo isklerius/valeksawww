@@ -1,0 +1,347 @@
+/* by Alexander Endresen and mark */
+#menu_vert {
+/* no margin/padding so it fills the whole div */
+	margin: 0;
+	padding: 0;
+}
+.clearb {
+/* needed for some browsers */
+	clear: both;
+}
+#menuwrapper {
+/* set the background color for the menu here */
+	background-color: #243135;
+/* IE6 Hack */
+	height: 1%;
+	width: auto;
+/* one border at the top */
+	border-top: 1px solid #3F565C;
+	margin: 0;
+	padding: 0;
+}
+ul#primary-nav {
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#primary-nav ul {
+/* remove any default bullets */
+	list-style-type: none;
+/* sets width of second level ul to background image */
+	width: 210px;
+	margin: 0px;
+	padding: 0px;
+/* make the ul stay in place so when we hover it lets the drops go over the content instead of displacing it */
+	position: absolute;
+/* top being the bottom of the li it comes out of */
+	top: auto;
+/* keeps it hidden till hover event */
+	display: none;
+/* room at top for li so image top shows correct */
+	padding-top: 9px;
+/* set your image here, tall enough for the ul */
+	background: url([[root_url]]/uploads/ngrey/ultopup.png) no-repeat left top;
+}
+/* IE6 hacks on the above code */
+* html #primary-nav ul {
+	padding-top: 13px;
+	background: url([[root_url]]/uploads/ngrey/ultopup.gif) no-repeat left top;
+}
+#primary-nav ul ul {
+/* insures no top margins */
+	margin-top: 0px;
+/* pulls the last ul back over the preceding ul */
+	margin-left: -1px;
+/* keeps the left side of this ul on the right side of the preceding ul */
+	left: 100%;
+/* negative margin pulls the left centered in li next to it */
+	top: -3px;
+/* set your image here, tall enough for the ul, this is the left arrow for third level ul */
+	background: url([[root_url]]/uploads/ngrey/ultoprt.png) no-repeat left top;
+}
+/* IE6 hacks on the above code */
+* html #primary-nav ul ul {
+	margin-top: 0px;
+	padding-left: 5px;
+	left: 100%;
+	top: -7px;
+/* IE6 gets gif as it can't handle transparent png */
+	background: url([[root_url]]/uploads/ngrey/ultoprt.gif) no-repeat right top;
+}
+#primary-nav li {
+/* a little space to the left of each top level menu item */
+	margin-left: 5px;
+/* floating left will set menu items to line up left to right else they will stack top to bottom */
+	float: left;
+}
+#primary-nav li li {
+/* a little more space to the left of each menu item */
+	margin-left: 8px;
+/* keeps them tight to the one above, no missed hovers */
+	margin-top: -1px;
+/* removes the left float set in first li so these will stack from top down */
+	float: none;
+/* relative to the ul they are in */
+	position: relative;
+}
+/* IE6 hacks on the above code */
+* html #primary-nav li li {
+	margin-left: 6px;
+/* helps hold it inside the ul */
+	width: 171px;
+}
+ul#primary-nav li a {
+/* specific font size, this could be larger or smaller than default font size */
+	font-size: 1em;
+/* make sure we keep the font normal */
+	font-weight: normal;
+/* set default link colors */
+	color: #fff;
+/* doing tab menus require a bit different padding, this will give room on right for image to show, adjust to width of your image */
+	padding: 0px 11px 0px 0px;
+/* makes it hold a shape */
+	display: block;
+/* remove default "a" underline */
+	text-decoration: none;
+}
+ul#primary-nav li a span {
+/* takes normal "a" padding minus some for right image */
+	padding: 12px 4px 12px 15px;
+/* makes it hold a shape */
+	display: block;
+}
+ul#primary-nav li a:hover {
+/* kind of obvious */
+	background-color: transparent;
+}
+ul#primary-nav li {
+/* set your image here */
+	background:  url([[root_url]]/uploads/ngrey/navrttest.gif) no-repeat right -51px;
+}
+ul#primary-nav li span {
+/* set your image here */
+	background:  url([[root_url]]/uploads/ngrey/navlefttest.gif) repeat-x left -51px;
+/* set text color here also to insure color */
+	color: #fff;
+/* just to be sure */
+	font-weight: normal;
+}
+ul#primary-nav li li {
+/* remove any image set in first level li */
+	background:  none;
+}
+ul#primary-nav li li span {
+/* remove any image set in first level li span */
+	background:  none;
+/* set text color here also to insure color */
+	color: #fff;
+/* just to be sure */
+	font-weight: normal;
+}
+ul#primary-nav li:hover,
+ul#primary-nav li.menuh,
+ul#primary-nav li.menuparenth {
+/* set hover image, right side */
+	background:  url([[root_url]]/uploads/ngrey/navrttest.gif) no-repeat right 0px;
+}
+ul#primary-nav li:hover span,
+ul#primary-nav li.menuh span,
+ul#primary-nav li.menuparenth span {
+/* set hover image, left side */
+	background:  url([[root_url]]/uploads/ngrey/navlefttest.gif) repeat-x left 0px;
+/* change text color on hover */
+	color: #000;
+	font-weight: normal;
+}
+/* IE6 hacks, the JS used for hover effect in IE6 puts class menuh on li, unless they have a class then just an "h" as seen above and below */
+ul#primary-nav li li.menuh {
+	background:  none;
+	font-weight: normal;
+}
+/* IE6 hacks */
+ul#primary-nav li.menuparenth li span {
+	background:  none;
+	color: #000;
+	font-weight: normal;
+}
+/* IE6 hacks */
+ul#primary-nav li.menuparenth li.menuparent span {
+/* gif for IE6, as it can't handle transparent png */
+	background:  url([[root_url]]/uploads/ngrey/parent.gif) no-repeat right center;
+	color: #000
+}
+/* IE6 hacks */
+ul#primary-nav li.menuparenth li.menuh span {
+	background:  none;
+	color: #FFF;
+	font-weight: normal;
+}
+/* IE6 hacks */
+ul#primary-nav li.menuparenth li.menuparenth {
+	background:  none;
+	color: #FFF;
+	font-weight: normal;
+}
+ul#primary-nav li.menuactive a {
+/* set your image here for active tab right */
+	background:  url([[root_url]]/uploads/ngrey/navrttest.gif) no-repeat right 0px;
+}
+ul#primary-nav li a.menuactive span {
+/* set your image here for active tab left */
+	background:  url([[root_url]]/uploads/ngrey/navlefttest.gif) repeat-x left 0px;
+/* non active is #FFF/white, we need #000/black to contrast with light background */
+	color: #000;
+/* bold to set it off from non active */
+	font-weight: bold;
+}
+#primary-nav li li a {
+/* second level padding, no image and not as big */
+	padding: 5px 10px;
+/* to keep it within li */
+	width: 165px;
+/* space between them */
+	margin: 5px;
+	background: none;
+}
+/* IE6 hacks to above code */
+* html #primary-nav li li a {
+	padding: 5px 10px;
+	width: 165px;
+	margin: 0px;
+	color: #000;
+}
+#primary-nav li li:hover {
+/* remove image set in first level */
+	background: none;
+}
+#primary-nav li li a:hover {
+/* set different image than first level */
+	background:  url([[root_url]]/uploads/ngrey/darknav.png) repeat-x left center;
+/* we need #FFF/white to contrast with dark background */
+	color: #FFF;
+}
+#primary-nav li.menuparent li a:hover span {
+/* insures text color */
+	color: #FFF;
+}
+ul#primary-nav li:hover li a span {
+/* first level is #FFF/white, we need #000/black to contrast with light background */
+	color: #000;
+/* just to insure normal */
+	font-weight: normal;
+}
+#primary-nav li li.menuactive a.menuactive, #primary-nav li li.menuactive a.menuactive:hover {
+/* set your image here, lighter than hover */
+	background:  url([[root_url]]/uploads/ngrey/nav.png) repeat-x left 0px;
+/* non active is #FFF/white, we need #000/black to contrast with light background */
+	color: #000;
+}
+#primary-nav li li.menuactive a.menuactive span {
+/* insures text color */
+	color: #000
+}
+#primary-nav li li.menuactive a.menuactive:hover span {
+/* insures text color */
+	color: #000;
+}
+/* IE6 hacks to above code */
+#primary-nav li li.menuparenth a.menuparent span {
+/* right arrow for menu parent, IE6 gif */
+	background:  url([[root_url]]/uploads/ngrey/parent.gif) no-repeat right center;
+	color: #000
+}
+/* IE6 hacks to above code */
+#primary-nav li li.menuparenth a.menuparent:hover span {
+	color: #FFF
+}
+#primary-nav li li.menuparent a.menuparent span {
+/* right arrow for parent item */
+	background:  url([[root_url]]/uploads/ngrey/parent.gif) no-repeat right center;
+}
+#primary-nav li.menuactive li a:hover span {
+/* black text */
+	color: #000
+}
+ul#primary-nav li li a.menuactive  span {
+/* remove image set in first level */
+	background:  none;
+	font-weight: normal;
+}
+#primary-nav li.menuactive li a {
+/* second level active link color */
+	color: #0587A9;
+	text-decoration: none;
+	background: none;
+}
+#primary-nav li.menuactive li a:hover {
+/* dark image for hover */
+	background:  url([[root_url]]/uploads/ngrey/darknav.png) repeat-x left center;
+}
+#primary-nav li.menuactive li a:hover span {
+/* white text to contrast with dark background image on hover */
+	color: #FFF;
+}
+ul#primary-nav li:hover li a span, ul#primary-nav li.menuparenth li a span {
+	padding: 0px;
+	background:  none;
+}
+/* this is a special li type from the menu template, used to hold the bottom image for ul set above */
+#primary-nav ul li.separator, #primary-nav .separator:hover {
+/* set same as ul */
+	width: 210px;
+/* height of image */
+	height: 9px;
+/* negative margin pulls it down to cover ul image */
+	margin: 0px 0px -8px;
+/* set your image here */
+	background: url([[root_url]]/uploads/ngrey/ulbtmrt.png) no-repeat left bottom;
+}
+/* same as above for next level to insure it shows correct */
+#primary-nav ul ul li.separator, #primary-nav ul ul li.separator:hover {
+	height: 9px;
+	margin: 0px 0px -8px;
+	background: url([[root_url]]/uploads/ngrey/ulbtmrt.png) no-repeat left bottom;
+}
+/* IE6 hacks */
+* html #primary-nav ul li.separator {
+	height: 2px;
+	background: url([[root_url]]/uploads/ngrey/ulbtmrt.gif) no-repeat left bottom;
+}
+/* IE6 hacks */
+* html #primary-nav ul li.separatorh {
+	margin: 0px 0px -8px;
+	height: 2px;
+	background: url([[root_url]]/uploads/ngrey/ultop.gif) no-repeat left top;
+}
+/* The magic - set to work for up to a 3 level menu, but can be increased unlimited, for fourth level add
+#primary-nav li:hover ul ul ul,
+#primary-nav li.menuparenth ul ul ul,
+*/
+#primary-nav ul,
+#primary-nav li:hover ul,
+#primary-nav li:hover ul ul,
+#primary-nav li.menuparenth ul,
+#primary-nav li.menuparenth ul ul {
+	display: none;
+}
+/* for fourth level add
+#primary-nav ul ul ul li:hover ul,
+#primary-nav ul ul ul li.menuparenth ul,
+*/
+#primary-nav li:hover ul,
+#primary-nav ul li:hover ul,
+#primary-nav ul ul li:hover ul,
+#primary-nav li.menuparenth ul,
+#primary-nav ul li.menuparenth ul,
+#primary-nav ul ul li.menuparenth ul {
+	display: block;
+}
+/* IE Hacks */
+#primary-nav li li {
+	float: left;
+	clear: both;
+}
+#primary-nav li li a {
+	height: 1%;
+}

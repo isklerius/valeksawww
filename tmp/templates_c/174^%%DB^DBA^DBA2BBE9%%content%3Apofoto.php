@@ -1,0 +1,5 @@
+<?php /* Smarty version 2.6.25, created on 2017-04-15 20:09:49
+         compiled from content:pofoto */ ?>
+<h2>Mes žinome kaip!</h2>
+<p>UAB „Valeksa“ įsteigta 1996 metais.<br />Nepertraukiamai teikdami bankroto administravimo paslaugas ir padėdami rasti verslo sprendimus savo klientams, per 17 metų darbo praktiką, mes įgijome neįkainojamos patirties. Mes augome kartu su Lietuvos rinka, buvome ne tik stebėtojai, bet ir aktyvūs rinkos dalyviai.<br />Per 17 metų surinkome tvirtą, patyrusių darbuotojų komandą. Iš patirties žinome, kad bankrotas ne retai būna naujo, stipraus verslo pradžia. Visada atsižvelgiame į visų suinteresuotų šio reiškinio pusių interesus. Mes ne tik administruojame bankroto procedūrą, bet proceso metu ieškome bei siūlome optimaliausius verslo sprendimus esamai situacijai.   <br /><br /></p>
+<a href="apie-mus">Plačiau</a>

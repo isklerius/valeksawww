@@ -1,0 +1,12 @@
+html {height: 100%; width: 100%; margin:0; padding: 0;}
+body {height: 100%; width: 100%; margin:0; padding: 0; background: #fff url('../img/login/loginbgr.gif') repeat-x left top; font-family: arial}
+table {height: 100%; width: 100%;}
+td {vertical-align: center; text-align: center; position: relative}
+.login {width: 258px; margin: 0 auto 0 auto; padding-top: 150px}
+.login .logleft {width: 250px; height: 125px; padding-top: 15px; display: block; background: #fff url('../img/login/logleft.gif') no-repeat left top; float: left;}
+.login .logright {width: 5px; height: 140px; display: block; background: #fff url('../img/login/logright.gif') no-repeat left top; float: left;}
+.login label {font-size: 11px; width: 75px;  padding-left: 15px; display: block; float: left; line-height: 25px}
+.login input.txt {float: left; background-color: #faffbd; border: 1px #abc6dd solid; font-size: 12px; height: 19px; margin-top: 3px; width: 140px}
+.login input.submit {background: url('../img/login/prisijungti.gif') repeat-x left top; border: 1px #abc6dd solid; color: #fff; line-height: 19px; margin-left: 90px; float: left; margin-top: 5px}
+form {margin: 0; padding: 0}
+.clear {height: 0px; clear: both}

@@ -1,0 +1,127 @@
+--- action.random_image.php	2007-05-13 08:50:21.000000000 -0500
++++ /home/elijahlofgren/cmsmadesimple/patches/modules/Album/by-others/prevent-random-image-duplicates/action.random_image.php	2007-07-16 14:11:32.000000000 -0500
+@@ -20,32 +20,16 @@
+ # Author of Random Image:  Frank Prins <webmaster@frank-fem.com>
+ 
+ global $gCms;
++global $showedRandomArray;
+ $config = &$gCms->GetConfig();
+ $db = $this->GetDb();
+ 
+-
+-$album_page_id = $this->GetPreference('defaultalbumpage','');
+-// Get page content of the page from which Album is being called.
+-$q = "SELECT * FROM ".cms_db_prefix()."content WHERE content_id='".$album_page_id."'";
+-$dbresult = $db->Execute( $q );
+-if (!$dbresult)
+-  {
+-    echo 'DB error: '. $db->ErrorMsg()."<br/>";
+-  }
+- else
+-  {
+-     $call_page = $dbresult->FetchRow();
+-     $hierarchy_path = $call_page['hierarchy_path']; // TODO Move this to be a pref that is overwriddable by a param.
++# Check the contents of $GLOBALS['showedRandomArray'];
++  echo "\n<!-- show the contents of the global array -->\n";
++  foreach ($GLOBALS['showedRandomArray'] as $elem) {
++	echo "<!--" . $elem . "-->\n";  
+   }
+-
+-  if(empty($params['number']))
+-    {
+-      $number = 1;
+-    }
+-  else
+-    {
+-      $number = $params['number'];
+-    }
++  echo "<!-- end of global array -->\n";
+ 
+ # Check if the user specified a different main Album folder, else use default:
+   if (isset($params['imagesurl'])) {
+@@ -61,7 +45,6 @@
+     $specificalbums = True;
+ 
+   }
+-/*
+ 	# Check if user has specified a border around the thumbnail
+ 	if (isset($params['border']))
+ 	{
+@@ -76,7 +59,6 @@
+ 	} else {
+ 		$picturename = False;
+ 	}
+-*/
+ 	
+ 	# no lets get going, first get the number of rows in the database for the specified albums:
+ 	if (FALSE == empty($specificalbums)) {
+@@ -90,44 +72,16 @@
+ 	  echo 'DB error: '. $db->ErrorMsg()."<br/>";
+ 	}
+ 	$numrows = $dbresult->RecordCount();
+-	# ok, now we have the number of rows, lets create a random number in between zero and the found number of rows:
+-
+-for ($i = 0; $i < $number; $i++)
+-{
+-	$randomnum = rand(1, $numrows);
+-	// echo 'the num is: '. $randomnum;
+-	# and move the recordpointer to the random choosen row: (minus 1, Move() starts at zero)
+-	$dbresult->Move($randomnum -1);
+-	$row = $dbresult->FetchRow();
+-	// print_r($row);
+-	// echo 'end';
+-	$picture=$this->row2picture_class($row);
+-	$this->setThumbDimensions($row, $picture);
+-	$albumid = $row['picture_album_id'];
+-	$picture->link =   $this->CreateLink($id, 'default', $returnid, '', array('albumid'=>$albumid,'pictureid'=>$row['picture_id']), '', true, '', '', '', $hierarchy_path.'/album-'.$albumid.'/'.$row['picture_id'].'/'.$returnid);
+-
+-// $this->CreateLink($id, 'default', $album_page_id, '', array('albumid'=>$row['picture_album_id'],'pictureid'=>$row['picture_id']), '', true, '', '', '', $hierarchy_path.'/album-'.$row['picture_album_id'].'/'.$row['picture_id'].'/'.$album_page_id);
+-	$pictures[] = $picture;
+-}
+-
+-
+-$this->smarty->assign_by_ref('pictures', $pictures);
+-// $this->smarty->assign('picturenumber', 10);
+-$db_templatecontent = $this->GetTemplate('random_image');
+-if (FALSE == empty($db_templatecontent))
+-{
+-	$output = $this->ProcessTemplateFromDatabase('random_image');
+-}
+-else
+-{
+-	$output = $this->ProcessTemplate('db/random_image.tpl');
+-}
+-echo $output;
+-
+-
+-
+-/*
+-
++	# check if the image returned is unique:
++        $key = 1;
++        while (strlen($key) > 0 && $key >= 0) {
++	  # ok, now we have the number of rows, lets create a random number in between zero and the found number of rows:
++	  $randomnum = rand(1, $numrows);
++	  # and move the recordpointer to the random choosen row: (minus 1, Move() starts at zero)
++	  $dbresult->Move($randomnum -1);
++	  $randomrow = $dbresult->FetchRow();
++          $key = array_search($randomrow['thumbnail_path'],$GLOBALS['showedRandomArray'] );
++        }
+ 	# show the details:
+ 	if ($picturename == "True") {
+ 	  echo "<div align=\"center\"><p>".$randomrow['picture_name']."</p><img style=\"border: "
+@@ -137,5 +91,11 @@
+ 		echo "<div align=\"center\"><img style=\"border: ".$border." solid black;\" src=\""
+ 		       .$imagesurl.$randomrow['thumbnail_path']."\" alt=\"".$randomrow['picture_name']."\"><div align=\"center\">";
+ 	}
+-*/
+-?>
+\ No newline at end of file
++    $GLOBALS['showedRandomArray'][] = $randomrow['thumbnail_path'];
++    # Check the contents of $GLOBALS['showedRandomArray'];
++    echo "\n<!-- show the contents of the global array -->\n";
++    foreach ($GLOBALS['showedRandomArray'] as $elem) {
++	  echo "<!--" . $elem . "-->\n";  
++    }
++    echo "<!-- end of global array -->\n";
++?>

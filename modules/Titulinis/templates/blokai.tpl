@@ -1,0 +1,51 @@
+﻿<div class="pageoptions">
+	<p class="pageoptions">{$addlink}</p>
+</div>
+<tbody>
+<table cellspacing="0" class="pagetable">
+		<thead>
+			<tr>
+				<th width="10px"><div>&nbsp;</div></th>
+				<th  width="20px"><div>{$Titulinis->Lang(sq)}</div></th>
+				<th width="20px" style="text-align:center"><div>{$Titulinis->Lang(paveiksliukas)}</div></th>
+				<th width="100px" style="text-align:center"><div>{$Titulinis->Lang(antraste)}</div></th>
+				<th width="20px" style="text-align:center"><div>Tekstas</div></th>
+				<th width="20px" style="text-align:center"><div>{$Titulinis->Lang(nuoroda)}</div></th>
+				<th  width="30px"><div>{$Titulinis->Lang(state)}</div></th>
+				<th  width="10px" class="pageicon"><div>{$Titulinis->Lang(istrinti)}</div></th>
+			</tr>
+		</thead>
+</tbody>
+{foreach from=$kalbos item=kalba key=kl}
+	<tbody id='{$kalba}'>
+			<tr><td colspan='8' style="background-color: #e5e5e5"><b>{$kalba|upper}</b></td></tr>
+			{assign var='nmb' value='0'}
+			{foreach from=$prop_array.$kl item=entry}
+			{assign var='nmb' value=$nmb+1}
+				<tr class="row1" onmouseover="this.className='row1hover';" onmouseout="this.className='row1';" id='lt-{$nmb}'>
+					<td><div></div></td>
+					<td style="text-align:center"><div>{$entry->eiliskumas}</div></td>
+					<td>{if $entry->paveiksliukas}<div>{if $allow_more || ($cuser == $entry->userid)}<a href="moduleinterface.php?sp_={$smarty.get.sp_}&mact={$mod_w},m1_,editprop,0&prop_id={$entry->id}&m1_kat={$kateg}" class="roo" id="r-{$entry->kategorija}-{$nmb}"><img style="width: 100px" src="{$root_url}/uploads/images/titulinis/{$entry->paveiksliukas}"/></a>{else}{$entry->paveiksliulas}{/if}</div>{/if}</td>	
+					<td style="text-align:center"><div>{$entry->antraste}</div></td>
+					<td>{$entry->tekstas}</td>	
+					<td>{$entry->nuoroda}</td>	
+					<td><div>{if $entry->nerodyti}{$Titulinis->Lang(pasleptas)}{else}{$Titulinis->Lang(rodomas)}{/if}</div></td>					
+					<td><div>{if $allow_edit || ($cuser == $entry->userid)}<a href="moduleinterface.php?sp_={$smarty.get.sp_}&mact={$mod_w},m1_,editprop,0&prop_id={$entry->id}&m1_kat={$kateg}">edit</a>{/if}&nbsp;{if $allow_del == "yes" || ($cuser == $entry->userid)}|&nbsp;<a onclick="if(!confirm('ar tikrai?')) return false;" href="moduleinterface.php?sp_={$smarty.get.sp_}&mact={$mod_w},m1_,deleteprop,0&prop_id={$entry->id}">delete</a>{/if}</div></td>
+				</tr>
+			{/foreach}
+	</tbody>
+{/foreach}	
+
+<tbody>
+<tr>
+<td></td><td></td>
+</tr>
+		</tbody>
+
+</table>
+
+<div class="pageoptions">
+	<p class="pageoptions">{$addlink}</p>
+</div>
+
+

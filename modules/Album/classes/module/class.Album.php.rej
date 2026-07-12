@@ -1,0 +1,18 @@
+***************
+*** 544,550 ****
+  	}
+  	// Calculate picture dimensions
+  	// @TODO: Store dimensions in DB
+- 	if (is_readable($config['image_uploads_path'].$row['picture_path']))
+  	{
+  		list($width, $height, $type, $attr) = getimagesize($config['image_uploads_path'].$row['picture_path']);
+  		$picture->width = $width;
+--- 544,551 ----
+  	}
+  	// Calculate picture dimensions
+  	// @TODO: Store dimensions in DB
++ 	// Check is_file() is to stop read error on empty album
++ 	if (is_readable($config['image_uploads_path'].$row['picture_path']) && is_file($config['image_uploads_path'].$row['picture_path']))
+  	{
+  		list($width, $height, $type, $attr) = getimagesize($config['image_uploads_path'].$row['picture_path']);
+  		$picture->width = $width;

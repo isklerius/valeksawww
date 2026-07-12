@@ -1,0 +1,152 @@
+<?php
+if (!isset($gCms)) exit;
+$db = &$gCms->GetDb();
+include('dom.php');
+global $langfile;
+$degalines = array("1"=>"Vilnius, Erfurto g. 41","2"=>"Vilnius, Geležinio Vilko g. 63","3"=>"Vilnius, S. Stanevičiaus g. 3","4"=>"Vilnius, Žirmunų g. 68B","5"=>"Vilnius, Rygos g. 2","6"=>"Vilnius, Savanorių pr. 220A","7"=>"Vilnius, Parodų g. 1A","8"=>"Vilnius,  Kauno g. 26","9"=>"Vilnius, Savanorių pr. 187","10"=>"Vilnius, Savanorių pr. 16","11"=>"Vilnius, Moletų pl. 8","12"=>"Vilnius, P. Lukšio g. 22","13"=>"Vilnius, Žirmunų g. 54C","14"=>"Vilnius, Subačiaus g. 64","15"=>"Vilnius,  Jasinskio g. 14","16"=>"Vilnius,  Dariaus ir Girėno g. 17","17"=>"Vilnius,  Architektų g. 130","18"=>"Vilnius, Justiniškių g. 14B","19"=>"Vilnius, Laisvės pr. 125A","20"=>"Vilnius,  Buivydiškių g. 5","21"=>"Vilnius, Geležinio Vilko g. 37A","22"=>"Kaunas, Pramonės pr. 6A","23"=>"Kaunas, Jonavos g. 110","24"=>"Kaunas, Veiverių g. 132D","25"=>"Kaunas, Žemaičių pl. 26","26"=>"Kaunas, R. Kalantos g. 27","27"=>"Kaunas, Ateities pl. 50B","28"=>"Kaunas, Taikos pr. 80A","29"=>"Kaunas, Birželio 23-iosios g. 23A","30"=>"Kaunas, Islandijos pl. 191E","31"=>"Kaunas, Raudondvario pl. 103","32"=>"Kaunas, Kuršių g. 1","33"=>"Klaipėda, Šilutės pl. 113","34"=>"Klaipėda, Šilutės pl. 30","35"=>"Klaipėda, Taikos pr. 60 / Dubysos g. 20","36"=>"Klaipėda, Minijos g. 119 / Baltijos pr. 30","37"=>"Klaipėda, Artojo g. 2","38"=>"Klaipėda, Smiltelės g. 17","39"=>"Klaipėda, Šilutės pl. 5","40"=>"Šiauliai, Gegužių g. 28","41"=>"Šiauliai, Tilžės g. 72","42"=>"Šiauliai, Dubijos g. 18A","43"=>"Panevėžys, Klaipėdos g. 81","44"=>"Panevėžys, Ramygalos g. 145B","45"=>"Panevėžys, Klaipėdos g. 66","46"=>"Pasvalio r., Raubonių k.","47"=>"Panevėžys, Margirio g. 1B","48"=>"Panevėžys, Klaipėdos g. 144B","49"=>"Alytus, Santaikos g. 34A","50"=>"Marijampolė, Stoties g. 4C","51"=>"Kalvarijos sav. Salaperaugio k., Liubavo sen.","52"=>"Kalvarijos sav. N. Valios k., Sangrūdos pst.","53"=>"Mažeikiai, M. Daukšos g. 29/Žemaitijos g. 69","54"=>"Šilalės r., Katyčių k.","55"=>"Kėdainiai, J. Basanavičiaus g. 91E","56"=>"Ukmergė, Kauno g. 45B","57"=>"Utena, J. Basanavičiaus g. 129");			
+	
+
+$formos_id = $params['form'];
+if (!is_int($formos_id)) $formos_alias = $formos_id;
+if ($formos_id)
+	$row = $this->adb->getRow("SELECT * FROM ".cms_db_prefix().$lentele." WHERE id=?", array($formos_id));
+elseif($formos_alias)	
+	$row = $this->adb->getRow("SELECT * FROM ".cms_db_prefix().$lentele." WHERE formalias=?", array($formos_alias));
+
+	
+ $tbl = $row['formalias'];
+	
+ $fields = $this->prepare_input($params);
+ //debug_display($fields);
+ 
+ $this->smarty->assign("fields", $fields);
+
+ $validator = new validation;
+ $form_errors=array();
+ 
+ 
+if(isset($fields['form_id'])){			
+	 if($fields['form_id']=='2'){
+		
+		if( $validator->checkNesteCard($fields['kortele'])!== false)	 
+			$t = $validator->checkNesteUser($fields['kortele'],cms_db_prefix().$tbl);
+		else
+			$t = false;
+			
+		if($t === false) 
+			$form_errors['nera_korteles']=$langfile['nera_korteles'];
+		else{
+			$fields['vardas'] = $t['vardas'];
+			$fields['pavarde'] = $t['pavarde'];
+			$fields['miestas'] = $t['miestas'];
+			$fields['elpastas'] = $t['elpastas'];
+			$fields['marketingas'] = $t['marketingas'];
+			$fields['taisykles'] = $t['taisykles'];
+			if ($validator->checkNesteCardHolder($fields)=== false) $form_errors['kortele3']=$langfile['uzreg'];
+		}
+
+	 }
+	 if($fields['form_id']=='1'){
+		if ($validator->required($fields['vardas'])===false) $form_errors['vardas']=sprintf($langfile['uzpildyti'],$langfile['fvardas']);
+		if ($validator->required($fields['pavarde'])===false) $form_errors['pavarde']=sprintf($langfile['uzpildyti'],$langfile['fpavarde']);
+		if ($validator->required($fields['elpastas'])===false) $form_errors['elpastas']=sprintf($langfile['uzpildyti'],$langfile['felpastas']); elseif ($validator->valid_email($fields['elpastas'])===false) $form_errors['elpastas']=sprintf($langfile['uzpildyti'],$langfile['felpastas']);
+		if ($validator->required($fields['miestas'])===false) $form_errors['miestas']=sprintf($langfile['uzpildyti'],$langfile['fmiestas']);
+		if ($validator->required($fields['taisykles'])===false) $form_errors['sutinku']=sprintf($langfile['uzpildyti'],$langfile['fsutinku']);
+	 }
+	 if ($validator->checkNestePhone($fields['telefonas'])===false){ 
+		$form_errors['telefonas']=sprintf($langfile['uzpildyti'],$langfile['ftelefonas']);
+	 }
+	 if ($validator->required($fields['kvitas'])===false) $form_errors['kvitas']=sprintf($langfile['uzpildyti'],$langfile['fkvitas']);
+	 elseif($validator->checkNesteKvitas($fields['kvitas']) === false) $form_errors['kvitas'] = $langfile['netinkamaskvitas'];
+	 if ($validator->required($fields['data'])===false) $form_errors['data']=sprintf($langfile['uzpildyti'],$langfile['fdata']);
+	 if ($fields['adresas']=='0') $form_errors['adresas']=sprintf($langfile['uzpildyti'],$langfile['fadresas']);
+	 if ($validator->checkNesteDuplicate($fields, cms_db_prefix().$tbl)== true) $form_errors['duplicate']=$langfile['jauegzistuoja'];
+	 if ($validator->checkNesteDates($fields['data'])== true) $form_errors['data2']=$langfile['netinka_data'];
+	 
+	 if (str_replace("_", "", $fields['kortele']) == "71059")
+		$fields['kortele'] = "";
+	 
+	 if ($validator->checkNesteCard($fields['kortele'])=== false) $form_errors['kortele']=$langfile['netinka_kortele'];
+	 //if ($validator->checkNesteCardHolder($fields, cms_db_prefix().$tbl)=== false) $form_errors['kortele2']=$langfile['netinka_kortele'];
+
+ if (sizeof($form_errors) || !sizeof($fields)){
+	$this->smarty->assign("form_errors", $form_errors);
+ }else{
+ 
+	if ($row['sendbyemail']){
+				$row['sendbyemail'] = str_replace(";", ",", $row['sendbyemail']);
+				$emails = explode(",", $row['sendbyemail']);
+
+				$mail = new PHPMailer();
+				$mail->CharSet = 'utf-8';
+				foreach ($emails as $email){
+					$mail->AddAddress($email);
+				}	
+				$mail->From = $post['elpastas'];
+				$mail->FromName = $post['vardas']." ".$post['pavarde'];
+				$mail->Subject = "Forma";
+				
+				foreach ($fields as $k=>$field){				
+					$msg .= $langfile["f".$k]." - {$field}<br/>";
+				}
+				$mail->MsgHTML($msg);
+				$mail->Send();	
+	}
+	
+	if ($row['storedb']){ 
+				$this->params['table'] = cms_db_prefix().$tbl;
+				$this->tempfields = $fields;
+				$this->tempfields['irasyta'] = date("Y-m-d H:i:s");
+				$this->save();
+	}
+	
+				$name = $this->tempfields["vardas"];
+				$surname = $this->tempfields["pavarde"];
+				$miestas2 = $this->tempfields["miestas"];
+				$email = $this->tempfields["elpastas"];
+				$sutik_taiyskles  = $this->tempfields["taisykles"];
+				$sutik_reklama  = $this->tempfields["marketingas"];
+				$kortele = $this->tempfields["kortele"];
+				$number = $this->tempfields["telefonas"];
+				$code = $this->tempfields["kvitas"];
+				$data = $this->tempfields['irasyta'];
+				$miestas = $degalines[$this->tempfields['adresas']];
+				$miestas = explode(',',$miestas);
+				$miestas  = $miestas['1'];
+
+				$url = 'http://trasa.900.lt/register/main.aspx?'.
+					'name='.urlencode($name).
+					'&surname='.urlencode($surname).
+					'&address='.$miestas.
+					'&email='.urlencode($email).
+					'&number='.urlencode($number).
+					'&age=0&code='.urlencode($code.' Data: '.urlencode($data)).
+					'&secure=44923bfd-5c06-4726-afd7-33be60e2abec'.
+					'&extra1='.urlencode($kortele).
+					'&extra2='.urlencode($sutik_taiyskles).
+					'&extra3='.urlencode($sutik_reklama).
+					'&extra4='.urlencode($miestas2)
+					;
+				
+				
+				$ch = curl_init();
+				curl_setopt($ch, CURLOPT_URL, $url);
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+				curl_setopt($ch, CURLOPT_REFERER, "http://neste.w.texus.lt/");
+				$ats = curl_exec($ch);
+				curl_close($ch);
+				$this->smarty->assign("success", '1');
+				
+	
+	//$template =  $langfile['aciukadpildote'];
+ } 
+}
+	
+ 
+	//arsort($degalines);
+	$this->smarty->assign("degalines", $degalines);
+	$this->smarty->assign("prefix", $id.$this->prefix);
+	$template =  $this->ProcessTemplate($row['formtpl'].".tpl");	
+	echo $template;
+ 
+?>

@@ -1,0 +1,10 @@
+<?php /* Smarty version 2.6.25, created on 2018-03-13 01:46:16
+         compiled from content:turinys */ ?>
+<p>The private limited liability company Valeksa was incorporated in 1996.</p>
+<p>The principal business of the Company is settlement of business problems. We provide the services of bankruptcy administration, enterprise restructuring, financial intermediation and enterprise management consulting services. Our Company keeps growing and developing the range of services provided to business.</p>
+<p>In 1997, PLC Valeksa was the first company in Lithuania authorised by the Ministry of Economy to provide enterprise bankruptcy administration services (in year 2003 was re-authorised by law <a href="uploads/Valeksa%20licenzija%201b.jpg" target="_blank">Authorisation No 1</a>).</p>
+<p>In 1999, PLC Valeksa participated in the setting up of the National Association of Business administrators and became its first member.</p>
+<p>In 2001, upon entry into force of the Republic of Lithuania Enterprise Bankruptcy Law the Company started providing enterprise restructuring services (<a href="uploads/Valeksa%20restrukturizavimo%20licenzija%206.jpg" target="_blank">Authorisation No 6</a>).  </p>
+<p>During uninterrupted business practice of more than 20 years the Company’s specialists administered over 300 enterprises in bankruptcy.</p>
+<p>Experience and a stable work of the company was evaluated. <a href="http://www.creditinfo.lt/sistema-imones/stipriausi-lietuvoje/stipriausi-lietuvoje-sraas/stipriausi-lietuvoje-2014/" target="_blank">"Creditinfo Lithuania"</a> has rated "Valeksa" between 5 percent of Lithuanian companies with a <span style="text-decoration: underline;">Highest credit rating</span>.<br />Currently the Company is successfully continuing enterprise administration business traditions adapting them to the pace of modern business world. Every end is a new beginning.</p>
+<p><strong>“We know how!”</strong></p>

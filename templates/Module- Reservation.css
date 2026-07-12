@@ -1,0 +1,166 @@
+/*
+ CSS for Module: Reservation
+*/
+
+div.top_steps h3,
+div.top_steps h4{
+display:inline;
+margin: 0 10px;
+}
+
+div.top_steps h4{
+color: #CBCBA1;
+}
+
+
+div.step1{
+margin:0;
+padding:3px 5px;
+width: 400px;
+background: #DDDAC9;
+border: 1px #C5BCA7 solid;
+}
+
+div.step1 label
+{
+width: 100px;
+color: #000;
+text-align: right;
+margin-right: 0.5em;
+display:inline;
+float:left;
+}
+
+div.step2{
+margin:0;
+padding:3px 5px;
+width: 720px;
+background: #DDDAC9;
+border: 1px #C5BCA7 solid;
+}
+div.step2_dates{
+margin-top:10px;
+margin-bottom:20px;
+}
+
+div.step2 label
+{
+margin-left:30px;
+color: #000;
+text-align: right;
+margin-right: 0.5em;
+display:inline;
+}
+
+div.step2 table{
+background: #EFECDC;
+font-size: 90%;
+margin-bottom:10px;
+}
+
+
+div.step2 table select{
+padding:0;
+}
+
+div.step2 table#room:hover{
+background: #F4F1EC;
+}
+
+
+div.step3{
+margin:0;
+padding:0;
+width: 720px;
+}
+
+div.res_top{
+margin: 0 0 5px 0;
+height: 25px;
+background: #DDDAC9;
+padding: 8px 5px 0 5px;
+}
+
+div.res{
+margin:0 0 5px 0;
+clear:both;
+border: 1px #C5BCA7 solid;
+background: #E2E1CF;
+height: 160px;
+}
+
+div.guestinfo{
+margin:0;
+padding:4px;
+}
+
+div.step3 table{
+background:#D2D1C0;
+padding:5px 0;
+margin:5px 0;
+}
+div.step3 td{
+padding:3px;
+}
+
+div.guestinfo label,
+div.step3 table{
+font-size:90%;
+}
+
+div.guestinfo label {
+float:left;
+margin:0pt 0pt 10px 100px;
+text-align:right;
+width:230px;
+}
+
+div.step3 table b{
+font-size:110%;
+}
+
+div.pageoptions p{
+clear:both;
+margin:0;
+padding:0;
+text-align:left;
+}
+
+div.desc_form{
+float:left;
+}
+
+div.description label{
+width:140px;
+font-size: 90%;
+}
+
+div.description textarea{
+height: 4em;
+}
+
+div.add_text{
+float:left;
+padding:15px 10px;
+text-align:left;
+display:inline;
+font-size: 90%;
+}
+
+#submit{
+margin-left: 105px;
+}
+#submit input {
+margin: 10px 5px;
+color: #000;
+background: #ffa20f;
+border: 2px outset #d7b9c9;
+	}
+
+div.total{
+clear:both;
+text-align:center;
+padding: 5px;
+background: #fff;
+font-weight: bold
+}
