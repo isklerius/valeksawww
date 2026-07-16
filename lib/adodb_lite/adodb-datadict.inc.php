@@ -428,7 +428,7 @@ class ADODB_DataDict {
 		$tabname = $this->TableName ($tabname);
 		if ($flds) {
 			list($lines,$pkey) = $this->_GenFields($flds);
-			list(,$first) = each($lines);
+			$first = reset($lines);
 			list(,$column_def) = split("[\t ]+",$first,2);
 		}
 		return array(sprintf($this->renameColumn,$tabname,$this->NameQuote($oldcolumn),$this->NameQuote($newcolumn),$column_def));

@@ -219,8 +219,7 @@ function DoContent(&$list, &$node, $checkdefault = true, $checkchildren = true)
 				$children =& $node->getChildren();
 				if (isset($children) && count($children))
 				{
-					reset($children);
-					while (list($key) = each($children))
+					foreach ($children as $key => $_ignored)
 					{
 						$onechild =& $children[$key];
 						DoContent($list, $onechild, $checkdefault, $checkchildren);

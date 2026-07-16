@@ -1,0 +1,324 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\filemanager\\ImageManager\\Classes\\IM.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\filemanager\\ImageManager\\Classes\\IM.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\header.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:admin\\header.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-24141a00-8cf3-46be-ad88-c06845a73ff6.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\classes\\class.admintheme.inc.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\classes\\class.admintheme.inc.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\multicontent.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:admin\\multicontent.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\style.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:admin\\style.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\adodb_lite\\adodb-datadict.inc.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\adodb_lite\\adodb-datadict.inc.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\adodb_lite\\adodb-error.inc.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\adodb_lite\\adodb-error.inc.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\misc.functions.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\misc.functions.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\page.functions.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\page.functions.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\smarty\\Smarty_Compiler.class.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\smarty\\Smarty_Compiler.class.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\MenuManager\\action.default.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules\\MenuManager\\action.default.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\MenuManager\\MenuManager.module.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules\\MenuManager\\MenuManager.module.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\Search\\action.dosearch.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules\\Search\\action.dosearch.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\Search\\search.tools.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules\\Search\\search.tools.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\ThemeManager\\ThemeManager.module.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules\\ThemeManager\\ThemeManager.module.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\classes\\class.content.inc.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lib\\classes\\class.content.inc.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\CGExtensions\\lib\\class.cge_array.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:modules\\CGExtensions\\lib\\class.cge_array.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "style.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\style.php",
+              "RelativeDocumentMoniker": "admin\\style.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\style.php",
+              "RelativeToolTip": "admin\\style.php",
+              "ViewState": "AgIAACIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:48.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "multicontent.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\multicontent.php",
+              "RelativeDocumentMoniker": "admin\\multicontent.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\multicontent.php",
+              "RelativeToolTip": "admin\\multicontent.php",
+              "ViewState": "AgIAAN0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:47.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IM.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\filemanager\\ImageManager\\Classes\\IM.php",
+              "RelativeDocumentMoniker": "lib\\filemanager\\ImageManager\\Classes\\IM.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\filemanager\\ImageManager\\Classes\\IM.php",
+              "RelativeToolTip": "lib\\filemanager\\ImageManager\\Classes\\IM.php",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAvwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:19:26.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "class.admintheme.inc.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\classes\\class.admintheme.inc.php",
+              "RelativeDocumentMoniker": "lib\\classes\\class.admintheme.inc.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\classes\\class.admintheme.inc.php",
+              "RelativeToolTip": "lib\\classes\\class.admintheme.inc.php",
+              "ViewState": "AgIAAPwAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:19:26.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "header.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\header.php",
+              "RelativeDocumentMoniker": "admin\\header.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\admin\\header.php",
+              "RelativeToolTip": "admin\\header.php",
+              "ViewState": "AgIAAAUAAAAAAAAAAAApwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:19:25.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "plan-24141a00-8cf3-46be-ad88-c06845a73ff6.md [Preview]",
+              "DocumentMoniker": "C:\\Users\\ignas\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-24141a00-8cf3-46be-ad88-c06845a73ff6.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-24141a00-8cf3-46be-ad88-c06845a73ff6.md",
+              "ToolTip": "C:\\Users\\ignas\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-24141a00-8cf3-46be-ad88-c06845a73ff6.md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\VisualStudio\\copilot-vs\\plan-24141a00-8cf3-46be-ad88-c06845a73ff6.md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-07-15T20:18:45.941Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "class.cge_array.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\CGExtensions\\lib\\class.cge_array.php",
+              "RelativeDocumentMoniker": "modules\\CGExtensions\\lib\\class.cge_array.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\CGExtensions\\lib\\class.cge_array.php",
+              "RelativeToolTip": "modules\\CGExtensions\\lib\\class.cge_array.php",
+              "ViewState": "AgIAAMwAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:21:34.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "class.content.inc.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\classes\\class.content.inc.php",
+              "RelativeDocumentMoniker": "lib\\classes\\class.content.inc.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\classes\\class.content.inc.php",
+              "RelativeToolTip": "lib\\classes\\class.content.inc.php",
+              "ViewState": "AgIAAGEIAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:21:34.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ThemeManager.module.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\ThemeManager\\ThemeManager.module.php",
+              "RelativeDocumentMoniker": "modules\\ThemeManager\\ThemeManager.module.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\ThemeManager\\ThemeManager.module.php",
+              "RelativeToolTip": "modules\\ThemeManager\\ThemeManager.module.php",
+              "ViewState": "AgIAAB8AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:51.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "search.tools.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\Search\\search.tools.php",
+              "RelativeDocumentMoniker": "modules\\Search\\search.tools.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\Search\\search.tools.php",
+              "RelativeToolTip": "modules\\Search\\search.tools.php",
+              "ViewState": "AgIAAJMAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:51.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "action.dosearch.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\Search\\action.dosearch.php",
+              "RelativeDocumentMoniker": "modules\\Search\\action.dosearch.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\Search\\action.dosearch.php",
+              "RelativeToolTip": "modules\\Search\\action.dosearch.php",
+              "ViewState": "AgIAADQAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:50.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuManager.module.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\MenuManager\\MenuManager.module.php",
+              "RelativeDocumentMoniker": "modules\\MenuManager\\MenuManager.module.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\MenuManager\\MenuManager.module.php",
+              "RelativeToolTip": "modules\\MenuManager\\MenuManager.module.php",
+              "ViewState": "AgIAAJwAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:50.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "action.default.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\MenuManager\\action.default.php",
+              "RelativeDocumentMoniker": "modules\\MenuManager\\action.default.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\modules\\MenuManager\\action.default.php",
+              "RelativeToolTip": "modules\\MenuManager\\action.default.php",
+              "ViewState": "AgIAAJ0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:50.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Smarty_Compiler.class.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\smarty\\Smarty_Compiler.class.php",
+              "RelativeDocumentMoniker": "lib\\smarty\\Smarty_Compiler.class.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\smarty\\Smarty_Compiler.class.php",
+              "RelativeToolTip": "lib\\smarty\\Smarty_Compiler.class.php",
+              "ViewState": "AgIAAC0CAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:50.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "page.functions.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\page.functions.php",
+              "RelativeDocumentMoniker": "lib\\page.functions.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\page.functions.php",
+              "RelativeToolTip": "lib\\page.functions.php",
+              "ViewState": "AgIAAMYDAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:49.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "misc.functions.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\misc.functions.php",
+              "RelativeDocumentMoniker": "lib\\misc.functions.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\misc.functions.php",
+              "RelativeToolTip": "lib\\misc.functions.php",
+              "ViewState": "AgIAAPIAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:49.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "adodb-error.inc.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\adodb_lite\\adodb-error.inc.php",
+              "RelativeDocumentMoniker": "lib\\adodb_lite\\adodb-error.inc.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\adodb_lite\\adodb-error.inc.php",
+              "RelativeToolTip": "lib\\adodb_lite\\adodb-error.inc.php",
+              "ViewState": "AgIAAH8AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:48.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "adodb-datadict.inc.php",
+              "DocumentMoniker": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\adodb_lite\\adodb-datadict.inc.php",
+              "RelativeDocumentMoniker": "lib\\adodb_lite\\adodb-datadict.inc.php",
+              "ToolTip": "C:\\Users\\ignas\\source\\repos\\isklerius\\valeksawww\\lib\\adodb_lite\\adodb-datadict.inc.php",
+              "RelativeToolTip": "lib\\adodb_lite\\adodb-datadict.inc.php",
+              "ViewState": "AgIAAK0BAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2026-07-15T20:20:48.504Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

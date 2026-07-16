@@ -153,9 +153,8 @@ class MenuManager extends CMSModule
 	$children =& $parentnode->getChildren($deep);
 	if (isset($children) && count($children))
 	  {
-	    reset($children);
-	    while (list($key) = each($children))
-	      {
+		foreach (array_keys($children) as $key)
+		  {
 		$onechild =& $children[$key];
 		$content =& $onechild->GetContent($deep);
 		if( !is_object($content) ) 

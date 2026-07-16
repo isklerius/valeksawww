@@ -22,9 +22,9 @@ else
 	
 	debug_buffer('before theme load');
 
-	if (file_exists(dirname(__FILE__)."/themes/${themeName}/${themeObjectName}.php"))
+	if (file_exists(dirname(__FILE__)."/themes/{$themeName}/{$themeObjectName}.php"))
 	{
-		include(dirname(__FILE__)."/themes/${themeName}/${themeObjectName}.php");
+		include(dirname(__FILE__)."/themes/{$themeName}/{$themeObjectName}.php");
 		$themeObject = new $themeObjectName($gCms, $userid, $themeName);
 	}
 	else

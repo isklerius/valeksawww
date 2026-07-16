@@ -30,7 +30,7 @@ define( "DTD_VERSION", "1.2" );
 
 function get_urls($string, $strict=true) {
   $types = array("href", "src", "url");
-  while(list(,$type) = each($types)) {
+  foreach ($types as $type) {
     $innerT = $strict?'[a-z0-9:?=&@/._-]+?':'.+?';
     preg_match_all ("|$type\=([\"'`])(".$innerT.")\\1|i", $string, $matches);
     $ret[$type] = $matches[2];

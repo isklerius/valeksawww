@@ -250,8 +250,7 @@ class AdminTheme
       global $gCms;
     	# Are there any modules with an admin interface?
         $cmsmodules =& $gCms->modules;
-		reset($cmsmodules);
-		while (list($key) = each($cmsmodules))
+		foreach (array_keys($cmsmodules) as $key)
 		{
 			$value =& $cmsmodules[$key];
             if (isset($cmsmodules[$key]['object'])
@@ -1832,7 +1831,7 @@ debug_buffer('after menu items');
     {
        $path = NULL;
        $keys = array_keys($haystack);
-       while (!$path && (list($toss,$k)=each($keys))) {
+       reset($keys); $__keys_idx = 0; while (!$path && isset($keys[$__keys_idx]) && ($k = $keys[$__keys_idx++]) !== null) {
          $v = $haystack[$k];
          if (is_scalar($v)) {
              if ($v===$needle) {
@@ -1949,9 +1948,9 @@ debug_buffer('after menu items');
 		$themeObjectName = $themeName."Theme";
 		$userid = get_userid();
 	
-		if (file_exists(dirname(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR.$config['admin_dir']."/themes/${themeName}/${themeObjectName}.php"))
+		if (file_exists(dirname(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR.$config['admin_dir']."/themes/{$themeName}/{$themeObjectName}.php"))
 		{
-			include(dirname(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR.$config['admin_dir']."/themes/${themeName}/${themeObjectName}.php");
+			include(dirname(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR.$config['admin_dir']."/themes/{$themeName}/{$themeObjectName}.php");
 			$themeObject = new $themeObjectName($gCms, $userid, $themeName);
 		}
 		else

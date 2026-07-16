@@ -241,7 +241,7 @@ function ErrorHandler404()
 
 	function parse_template ($template, $tpl_array, $warn=0)
 	{
-		while ( list ($key,$val) = each ($tpl_array) )
+		foreach ($tpl_array as $key => $val)
 		{
 			if (!(empty($key)))
 			{
@@ -265,7 +265,7 @@ function ErrorHandler404()
 			if (ereg('\{[A-Z0-9_]+\}',$template))
 			{
 				$unknown = split("\n",$template);
-				while (list ($Element,$Line) = each($unknown) )
+				foreach ($unknown as $Element => $Line)
 				{
 					$UnkVar = $Line;
 					if(!(empty($UnkVar)))

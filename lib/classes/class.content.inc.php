@@ -2144,7 +2144,7 @@ class ContentBase
 	  $attrs = $tmp;
 
 	  // sort the attributes on the 2nd element...
-	  $fn = create_function('$a,$b','if( $a[1] < $b[1] ) return -1; else if( $a[1] == $b[1] ) return 0; else return $b;');
+	  $fn = function($a,$b){ if( $a[1] < $b[1] ) return -1; else if( $a[1] == $b[1] ) return 0; else return $b; };
 	  usort($attrs,$fn);
 
 	  $tmp = $this->display_admin_attributes($attrs,$adding);

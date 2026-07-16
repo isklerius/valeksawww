@@ -144,10 +144,9 @@ function search_Reindex(&$module)
   global $gCms;
   $templateops =& $gCms->GetTemplateOperations();
   $alltemplates = $templateops->LoadTemplates();
-  reset($alltemplates);
-  while (list($key) = each($alltemplates))
-    {
-      $onetemplate =& $alltemplates[$key];
+  foreach (array_keys($alltemplates) as $key)
+	{
+	  $onetemplate =& $alltemplates[$key];
       //$module->EditTemplatePost($onetemplate);
       $params = array('template' => &$onetemplate,
 		      'forceindexcontent'=>1);
@@ -156,10 +155,9 @@ function search_Reindex(&$module)
 
   $gcbops =& $gCms->GetGlobalContentOperations();
   $allblobs = $gcbops->LoadHtmlBlobs();
-  reset($allblobs);
-  while (list($key) = each($allblobs))
-    {
-      $oneblob =& $allblobs[$key];
+  foreach (array_keys($allblobs) as $key)
+	{
+	  $oneblob =& $allblobs[$key];
       //$module->EditHtmlBlobPost($oneblob);
       $params = array('global_content' => &$oneblob);
       $module->DoEvent('Core', 'EditGlobalContentPost', $params);

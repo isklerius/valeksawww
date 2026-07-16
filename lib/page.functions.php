@@ -964,8 +964,7 @@ function create_textarea($enablewysiwyg, $text, $name, $classname='', $id='', $e
 
 	if ($enablewysiwyg == true)
 	{
-		reset($gCms->modules);
-		while (list($key) = each($gCms->modules))
+		foreach (array_keys($gCms->modules) as $key)
 		{
 			$value =& $gCms->modules[$key];
 			if ($gCms->modules[$key]['installed'] == true && //is the module installed?
@@ -1000,8 +999,7 @@ function create_textarea($enablewysiwyg, $text, $name, $classname='', $id='', $e
 	
   if (($result=="") && ($wantedsyntax!=''))
 	{	  
-		reset($gCms->modules);
-		while (list($key) = each($gCms->modules))
+		foreach (array_keys($gCms->modules) as $key)
 		{
 			$value =& $gCms->modules[$key];
 			if ($gCms->modules[$key]['installed'] == true && //is the module installed?

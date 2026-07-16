@@ -33,7 +33,7 @@ else if (file_exists(dirname(__FILE__)."/themes/default/css/".$style))
 }
 
 global $gCms;
-while (list($key) = each($gCms->modules))
+foreach (array_keys($gCms->modules) as $key)
     {
 	$modptr =& $gCms->modules[$key];
     if (isset($modptr['object'])

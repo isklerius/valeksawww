@@ -155,8 +155,7 @@ if (!$cached)
 		$items = explode(',', $params['items']);
 		if (count($items) > 0)
 		{
-			reset($items);
-			while (list($key) = each($items))
+			foreach (array_keys($items) as $key)
 			{
 				$oneitem =& $items[$key];
 				$curnode =& $hm->sureGetNodeByAlias(trim($oneitem));
@@ -174,8 +173,7 @@ if (!$cached)
 			}
 
 			#PHP 4 is stupid.  Go through and reset all depths and prevdepths to 1
-			reset($nodelist);
-			while (list($key) = each($nodelist))
+			foreach (array_keys($nodelist) as $key)
 			{
 				$onenode =& $nodelist[$key];
 				$onenode->depth = 1;

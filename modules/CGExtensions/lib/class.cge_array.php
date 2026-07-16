@@ -203,8 +203,7 @@ class cge_array
       }
     $key = "'".$key."'";
     $t1 = str_replace('__KEY__',$key,$fn);
-    $tmp = create_function('$a,$b',$t1);
-    return usort($input,$tmp);
+    return usort($input, function($a,$b) use ($t1) { return eval($t1); });
   }
 
 

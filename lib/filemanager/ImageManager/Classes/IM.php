@@ -82,7 +82,7 @@ Class Image_Transform_Driver_IM extends Image_Transform
         /*if (isset($this->command['resize'])) {
             return PEAR::raiseError("You cannot scale or resize an image more than once without calling save or display", true);
         }*/
-        $this->command['resize'] = "-geometry ${new_x}x${new_y}!";
+        $this->command['resize'] = "-geometry {$new_x}x{$new_y}!";
 
         $this->new_x = $new_x;
         $this->new_y = $new_y;
