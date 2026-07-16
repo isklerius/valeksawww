@@ -106,7 +106,7 @@ function & adodb_connect()
 		if(!empty($config['default_encoding']) && $config['default_encoding'] == 'utf-8' && $config['set_names'] == true)
 		{
 			$dbinstance->Execute("SET NAMES 'utf8'");
-			$dbinstance->Execute("SET CHARACTER SET 'utf8_generic_ci'");
+			$dbinstance->Execute("SET COLLATION_CONNECTION = 'utf8_general_ci'");
 			
 		}
 	}

@@ -163,6 +163,11 @@ class Content2 extends CMSModuleContentType
 	/**
 	 * Constructor
 	 */
+        function __construct()
+        {
+                $this->Content2();
+        }
+
 	function Content2()
 	{
 		parent::ContentBase();

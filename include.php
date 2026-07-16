@@ -179,7 +179,7 @@ if (!defined('SMARTY_DIR')) {
 }
 
 #Stupid magic quotes...
-if(get_magic_quotes_gpc())
+if(false)
 {
     stripslashes_deep($_GET);
     stripslashes_deep($_POST);

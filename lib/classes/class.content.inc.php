@@ -214,6 +214,11 @@ class ContentBase
     /**
      * Generic constructor. Runs the SetInitialValues fuction.
      */
+    function __construct()
+    {
+        $this->ContentBase();
+    }
+
     function ContentBase()
     {
 	$this->SetInitialValues();

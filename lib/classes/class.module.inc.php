@@ -158,6 +158,12 @@ class CMSModule
 	 * Constructor
 	 *
 	 */
+    function __construct()
+    {
+        $this->CMSModule();
+    }
+
+
 	function CMSModule()
 	{
 		global $gCms;

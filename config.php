@@ -48,7 +48,7 @@ $config['output_compression'] = false;
 #This is your database connection information.  Name of the server,
 #username, password and a database with proper permissions should
 #all be setup before CMS Made Simple is installed.
-$config['dbms'] = 'mysql';
+$config['dbms'] = 'mysqli';
 $config['db_hostname'] = 'localhost';
 $config['db_username'] = 'valeksa';
 $config['db_password'] = 'Qos1nxFKx9G6wf05';
