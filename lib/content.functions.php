@@ -49,6 +49,11 @@ class Smarty_CMS extends Smarty {
 	 *
 	 * @param array The hash of CMSMS config settings
 	 */
+        function __construct(&$config)
+        {
+                $this->Smarty_CMS($config);
+        }
+
 	function Smarty_CMS(&$config)
 	{
 		$this->Smarty();
@@ -1023,7 +1028,7 @@ function search_plugins(&$smarty, &$plugins, $dir, $caching)
 		{
 			//Valid plugins will always have a 3 part filename
 			$filearray = explode('.', $path_parts['basename']);
-			if (count($filearray == 3))
+			if (count($filearray) == 3)
 			{
 				$filename = cms_join_path($dir, $file);
 				//The part we care about is the middle one...
