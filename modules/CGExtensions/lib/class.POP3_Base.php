@@ -202,7 +202,7 @@ class POP3_Base
 	else
 	  {
             $dTimeout = (double) implode(".",$arrConnectionTimeout);
-	    if( !$this->resSocket = @fsockopen($this->strProtocol. "://" . $this->strHostname .":". $this->intPort, &$intErrno, &$strError, $dTimeout) )
+        if( !$this->resSocket = @fsockopen($this->strProtocol. "://" . $this->strHostname .":". $this->intPort, $intErrno, $strError, $dTimeout) )
 	      {
 		throw new POP3_Exception( "[". $intErrno."] -- ". $strError, self::ERR_STREAM );
 	      }
