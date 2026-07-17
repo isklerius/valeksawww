@@ -806,7 +806,7 @@ class Content extends ContentBase
 		if( !isset($blockInfo['module']) ) return FALSE;
 		if( !isset($gCms->modules[$blockInfo['module']]['object']) ) return FALSE;
 		$module =& $gCms->modules[$blockInfo['module']]['object'];
-		if( !is_object($module) ) continue;
+		if( !is_object($module) ) return FALSE;
 		if( !$module->HasCapability('contentblocks') ) return FALSE;
 		if( isset($blockInfo['inputname']) && !empty($blockInfo['inputname']) )
 		{
