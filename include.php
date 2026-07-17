@@ -59,9 +59,6 @@ if( isset($CMS_ADMIN_PAGE) )
  * @package CMS
  */
 #magic_quotes_runtime is a nuisance...  turn it off before it messes something up
-if (version_compare(phpversion(),"5.3.0","<")) {
-  set_magic_quotes_runtime(false);
-}
 
 require_once($dirname.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'misc.functions.php');
 require_once($dirname.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'module.functions.php');

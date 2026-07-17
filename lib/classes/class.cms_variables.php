@@ -20,11 +20,13 @@ class cms_variables implements ArrayAccess
     return self::$_instance;
   }
 
+  #[\ReturnTypeWillChange]
   public function offsetExists($key)
   {
     return isset($this->_data[$key]);
   }
 
+  #[\ReturnTypeWillChange]
   public function offsetGet($key)
   {
     if( !in_array($key,$this->_allowed_variables) )
@@ -38,6 +40,7 @@ class cms_variables implements ArrayAccess
       }
   }
 
+  #[\ReturnTypeWillChange]
   public function offsetSet($key,$value)
   {
     // could do a friend thing here... or other limiting things.
@@ -48,6 +51,7 @@ class cms_variables implements ArrayAccess
     $this->_data[$key] = $value;
   }
 
+  #[\ReturnTypeWillChange]
   public function offsetUnset($key)
   {
     if( !in_array($key,$this->_allowed_variables) )

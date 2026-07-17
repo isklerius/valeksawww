@@ -122,7 +122,7 @@ Class Image_Transform_Driver_IM extends Image_Transform
      */
     function rotate($angle, $options=null)
     {
-        if ('-' == $angle{0}) {
+        if ('-' == $angle[0]) {
             $angle = 360 - substr($angle, 1);
         }
          $this->command['rotate'] = "-rotate $angle";

@@ -1760,7 +1760,7 @@ debug_buffer('after menu items');
 		  // Turn ModuleName into _Module_Name
 		  $moduleName =  preg_replace('/([A-Z])/', "_$1", $module_name);
 		  $moduleName =  preg_replace('/_([A-Z])_/', "$1", $moduleName);
-		  if ($moduleName{0} == '_')
+        if ($moduleName[0] == '_')
 		    {
 		      $moduleName = substr($moduleName, 1);
 		    }

@@ -20,6 +20,11 @@ class mysqli_driver_ADOConnection extends ADOConnection
 		$this->dataProvider = 'mysql';
 	}
 
+	function __construct()
+	{
+		$this->mysqli_driver_ADOConnection();
+	}
+
 	/**
 	 * Connection to database server and selected database
 	 * 
@@ -194,7 +199,7 @@ class mysqli_driver_ADOConnection extends ADOConnection
 
 	function QMagic($string)
 	{
-		return $this->qstr($string, get_magic_quotes_gpc());
+		return $this->qstr($string, false);
 	}
 
 	/**

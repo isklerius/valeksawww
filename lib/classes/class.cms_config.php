@@ -29,11 +29,13 @@ class cms_config implements ArrayAccess
     return self::$_instance;
   }
 
+  #[\ReturnTypeWillChange]
   public function offsetExists($key)
   {
     return isset($this->_data[$key]);
   }
 
+  #[\ReturnTypeWillChange]
   public function offsetGet($key)
   {
     if( !isset($this->_data[$key]) )
@@ -45,12 +47,14 @@ class cms_config implements ArrayAccess
     return $this->_data[$key];
   }
 
+  #[\ReturnTypeWillChange]
   public function offsetSet($key,$value)
   {
     trigger_error('Modification of config variables is deprecated',E_USER_ERROR);
     $this->_data[$key] = $value;
   }
 
+  #[\ReturnTypeWillChange]
   public function offsetUnset($key)
   {
     trigger_error('Unsetting config variable '.$key.' is invalid',E_USER_ERROR);
