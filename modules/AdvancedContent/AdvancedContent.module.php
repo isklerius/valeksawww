@@ -41,6 +41,11 @@ class AdvancedContent extends CMSModule
 	
 	#var $_loadedProps = array();
 	
+        function __construct()
+        {
+                $this->AdvancedContent();
+        }
+
 	function AdvancedContent()
 	{
 		parent::CMSModule();
