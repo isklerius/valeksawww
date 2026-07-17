@@ -2383,6 +2383,11 @@ class ContentProperties
 		$this->SetAllowedPropertyNames(NULL);
 	}
 
+	function __construct()
+	{
+		$this->ContentProperties();
+	}
+
     /**
      * Sets object to some sane initial values
      */
