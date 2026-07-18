@@ -5,14 +5,17 @@ include('dom.php');
 $db = &$gCms->GetDb();
 
 
+$adk = "";
 //pasiimam 
 if ($params['kategorija'] == "nuotraukos"){$addi = " and nuotrauka !='' ";}else{$addi="";}
 if ($params['kalba'])
-	$adk = " and kalba='".$params[kalba]."'";
-$query = 'SELECT * FROM '.cms_db_prefix().$lentele.' WHERE nerodyti=0 '.$addi.' and kategorija="'.$params[kategorija].'"  and del=0 '.$adk.' ORDER BY eiliskumas ASC';
+	$adk = " and kalba='".$params['kalba']."'";
+$query = 'SELECT * FROM '.cms_db_prefix().$lentele.' WHERE nerodyti=0 '.$addi.' and kategorija="'.$params['kategorija'].'"  and del=0 '.$adk.' ORDER BY eiliskumas ASC';
 
 $result = $db->Execute($query);   
-print mysql_error();
+if (!$result) {
+    echo $db->ErrorMsg();
+}
 $records = array();
 
 while ($result != false && $row=$result->FetchRow()){
